@@ -28,7 +28,7 @@ function check_ip {
   KEYWORD=$2
 
   # Make a request to the IP address and check if the keyword is in the response
-  if curl -s $IP_ADDRESS | grep -q "$KEYWORD"; then
+  if curl -s -k -m 3 $IP_ADDRESS | grep -q "$KEYWORD"; then
     # If the keyword is found, print the IP address with "found" next to it in green
     echo -e "\033[32m$IP_ADDRESS found\033[0m"
   else

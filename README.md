@@ -12,7 +12,7 @@ Make the file executable with the command:
 
 chmod +x ip_check.sh.
 
-Before using ./ip_checker.sh t, it is recommended to first run httpx on the list of ip addresses or a single ip to check if there are any web servers running on the IP addresses then pass is like:
+Before using ./ip_checker.sh, it is recommended to first run httpx on the list of ip addresses or a single ip to check if there are any web servers running on the IP addresses then pass is like:
 
 ./ip_checker.sh http(s)://IP_ADDRESS KEYWORD
 

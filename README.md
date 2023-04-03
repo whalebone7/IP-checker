@@ -14,7 +14,7 @@ chmod +x ip_check.sh.
 
 Before using ./ip_checker.sh, it is recommended to first run httpx on the list of ip addresses or a single ip to check if there are any web servers running on the IP addresses then pass is like:
 
-./ip_checker.sh <http(s)://IP_ADDRESS> <KEYWORD>
+./ip_checker.sh <http(s)://IP_ADDRESS> KEYWORD
 
 or
 
@@ -23,13 +23,13 @@ cat ips.txt should contains the list of the ip addresses with http(s).
 
 To check a single IP address, run the following command:
 
-./ip_checker.sh <http(s)://IP_ADDRESS> <KEYWORD>
+./ip_checker.sh <http(s)://IP_ADDRESS> KEYWORD
 
 Replace IP_ADDRESS with the IP address you want to check and KEYWORD with the keyword you want to search for in the HTTP response.
 
 To check a list of IP addresses in a file, create a file containing one IP address per line and run the following command:
 
-./ip_checker.sh <PATH_TO_IP_FILE> <KEYWORD>
+./ip_checker.sh <PATH_TO_IP_FILE> KEYWORD
 
 Replace PATH_TO_IP_FILE with the path to the file containing the IP addresses and KEYWORD with the keyword you want to search for in the HTTP response.
 

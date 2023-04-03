@@ -12,6 +12,15 @@ Make the file executable with the command:
 
 chmod +x ip_check.sh.
 
+Before using ./ip_checker.sh t, it is recommended to first run httpx on the list of ip addresses or a single ip to check if there are any web servers running on the IP addresses then pass is like:
+
+./ip_checker.sh http(s)://IP_ADDRESS KEYWORD
+
+or
+
+cat ips.txt should contains the list of the ip addresses with http(s).
+
+
 To check a single IP address, run the following command:
 
 ./ip_checker.sh IP_ADDRESS KEYWORD
@@ -26,7 +35,8 @@ Replace PATH_TO_IP_FILE with the path to the file containing the IP addresses an
 
 ### Example:
 
-./ip_checker.sh 192.168.0.1 Tesla
+./ip_checker.sh https://192.168.0.1 Tesla
+
 
 or
 
